@@ -150,7 +150,7 @@
 }
 
 .metricLabel {
-    font-size: 0.65rem;
+    font-size: var(--text-xs);
     color: var(--text-tertiary);
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -276,7 +276,7 @@
 }
 
 .gridCardSub {
-    font-size: 0.7rem;
+    font-size: var(--text-xs);
     color: var(--text-tertiary);
     letter-spacing: 0.01em;
 }

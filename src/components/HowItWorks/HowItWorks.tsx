@@ -8,37 +8,37 @@ const steps = [
     {
         number: 1,
         icon: <BarChart3 size={20} strokeWidth={2} />,
-        title: 'ERP Led Approvals',
-        time: 'Instant',
-        description: 'Real-time transaction insights power pre-qualified offers before you even apply.',
+        title: 'ERP-Led Pre-Qual',
+        time: 'Data-Driven',
+        description: 'ERP transaction signals power pre-approved offers automatically.',
     },
     {
         number: 2,
         icon: <ScanLine size={20} strokeWidth={2} />,
-        title: 'Digital Onboarding',
-        time: '10 min',
-        description: 'Aadhaar + PAN verification. No branch visits, no paperwork.',
+        title: 'Paperless Onboarding',
+        time: '100% Digital',
+        description: 'Aadhaar + PAN verification. No branch visits, no documents.',
     },
     {
         number: 3,
         icon: <BrainCircuit size={20} strokeWidth={2} />,
         title: 'AI Credit Decisioning',
-        time: '< 24 hours',
-        description: 'Intelligent credit decisioning powered by OEM data and bureau signals.',
+        time: 'Multi-Signal',
+        description: 'OEM data, bureau scores, and cash flow patterns — all in one model.',
     },
     {
         number: 4,
         icon: <FileSignature size={20} strokeWidth={2} />,
-        title: 'Agreement Signing',
-        time: 'Minutes',
-        description: 'Paperless e-sign with Aadhaar-based authentication. Fully digital, fully compliant.',
+        title: 'e-Sign & Compliance',
+        time: 'Zero Paperwork',
+        description: 'Aadhaar-based e-sign. Fully digital, fully compliant.',
     },
     {
         number: 5,
         icon: <Banknote size={20} strokeWidth={2} />,
-        title: 'Funds Disbursal',
-        time: 'Same day',
-        description: 'Direct bank transfer. No intermediaries, no holdbacks.',
+        title: 'Direct Disbursal',
+        time: 'Straight-Through',
+        description: 'Funds hit the account directly. No intermediaries, no holdbacks.',
     },
 ];
 
@@ -47,10 +47,10 @@ const HowItWorks = () => {
         <section id="how-it-works" className={styles.howItWorks}>
             <div className="container">
                 <div className={styles.header}>
-                    <span className={styles.badge}>THE PROCESS</span>
-                    <h2 className={styles.title}>Application to Funds. 72 Hours.</h2>
+                    <span className={styles.badge}>HOW IT WORKS</span>
+                    <h2 className={styles.title}>Smart Process. Seamless Experience.</h2>
                     <p className={styles.subtitle}>
-                        Five steps. One platform. Built for operators who can&apos;t afford to wait.
+                        Five steps from pre-qualification to disbursal. Fully digital, AI-native, and built for scale.
                     </p>
                 </div>
 

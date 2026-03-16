@@ -47,8 +47,8 @@
     background: rgba(79, 70, 229, 0.2);
     border: 1px solid rgba(79, 70, 229, 0.3);
     border-radius: var(--radius-full);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
     color: var(--color-primary-light);
     margin-bottom: var(--space-4);
 }
@@ -62,8 +62,8 @@
 }
 
 .title {
-    font-size: var(--font-size-4xl);
-    font-weight: var(--font-weight-bold);
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
     color: var(--color-white);
     margin-bottom: var(--space-4);
 }
@@ -73,9 +73,9 @@
 }
 
 .description {
-    font-size: var(--font-size-lg);
+    font-size: var(--text-lg);
     color: var(--color-gray-400);
-    line-height: var(--line-height-relaxed);
+    line-height: var(--leading-relaxed);
 }
 
 .agentContainer {
@@ -128,9 +128,9 @@
 }
 
 .statusText {
-    font-size: var(--font-size-sm);
+    font-size: var(--text-sm);
     color: var(--color-accent);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-semibold);
 }
 
 /* Waveform Visualizer */
@@ -244,7 +244,7 @@
     border-radius: 50%;
     font-size: 32px;
     cursor: pointer;
-    transition: all var(--transition-base);
+    transition: all var(--duration-base) var(--ease-out);
     position: relative;
     box-shadow: var(--shadow-glow);
 }
@@ -291,7 +291,7 @@
 .micHint {
     text-align: center;
     margin-top: var(--space-4);
-    font-size: var(--font-size-sm);
+    font-size: var(--text-sm);
     color: var(--color-gray-400);
 }
 
@@ -341,7 +341,7 @@
     align-items: center;
     gap: var(--space-2);
     margin-bottom: var(--space-2);
-    font-size: var(--font-size-xs);
+    font-size: var(--text-xs);
     color: var(--color-gray-400);
 }
 
@@ -357,8 +357,8 @@
 }
 
 .bubbleText {
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-relaxed);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
 }
 
 .typingIndicator {
@@ -418,12 +418,12 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-full);
-    font-size: var(--font-size-xs);
+    font-size: var(--text-xs);
     color: var(--text-secondary);
 }
 
 .featureIcon {
-    font-size: var(--font-size-sm);
+    font-size: var(--text-sm);
 }
 
 @media (max-width: 1024px) {

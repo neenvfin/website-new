@@ -33,7 +33,7 @@
     background: rgba(26, 45, 122, 0.04);
     border: 1px solid rgba(26, 45, 122, 0.1);
     border-radius: var(--radius-full);
-    font-size: 0.65rem;
+    font-size: var(--text-2xs);
     font-weight: var(--font-bold);
     color: var(--color-primary);
     text-transform: uppercase;
