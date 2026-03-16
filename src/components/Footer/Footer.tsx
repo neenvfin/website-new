@@ -17,6 +17,7 @@ const Footer = () => {
                                 alt="Neenv"
                                 width={180}
                                 height={60}
+                                sizes="180px"
                                 className={styles.logoImg}
                             />
                         </Link>

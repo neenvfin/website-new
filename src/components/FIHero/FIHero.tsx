@@ -30,6 +30,7 @@ const FIHero = () => {
                             alt="SCF Lifecycle - Originate, Assess, Verify, Transact, Manage, Monitor, De-risk"
                             width={450}
                             height={450}
+                            sizes="(max-width: 768px) 100vw, 450px"
                             className={styles.heroImage}
                             priority
                         />

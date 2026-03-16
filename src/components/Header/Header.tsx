@@ -94,6 +94,7 @@ const Header = () => {
                             alt="Neenv"
                             width={240}
                             height={135}
+                            sizes="120px"
                             priority
                             className={styles.logoImg}
                         />
@@ -190,6 +191,7 @@ const Header = () => {
                                 alt="Neenv"
                                 width={120}
                                 height={40}
+                                sizes="120px"
                             />
                         </Link>
                     </div>

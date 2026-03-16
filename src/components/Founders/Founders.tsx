@@ -59,6 +59,7 @@ const Founders = () => {
                                     alt={founder.name}
                                     width={150}
                                     height={150}
+                                    sizes="150px"
                                     className={styles.founderImage}
                                 />
                             </div>
