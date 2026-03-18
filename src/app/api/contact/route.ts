@@ -69,6 +69,14 @@ export const dynamic = 'force-dynamic';
 
 export async function POST(request: NextRequest) {
     try {
+        if (!process.env.RESEND_API_KEY) {
+            console.error('RESEND_API_KEY is not set');
+            return NextResponse.json(
+                { error: 'Email service not configured' },
+                { status: 500 }
+            );
+        }
+
         const resend = new Resend(process.env.RESEND_API_KEY);
         const data: ContactForm = await request.json();
 
@@ -80,8 +88,8 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        const { error } = await resend.emails.send({
-            from: 'Neenv Website <onboarding@info.neenvfin.com>',
+        const { data: result, error } = await resend.emails.send({
+            from: 'Neenv Website <noreply@info.neenvfin.com>',
             to: ['info@neenvfin.com'],
             replyTo: data.email,
             subject: `New Inquiry from ${data.name} (${data.companyName})`,
@@ -89,18 +97,18 @@ export async function POST(request: NextRequest) {
         });
 
         if (error) {
-            console.error('Resend error:', error);
+            console.error('Resend error:', JSON.stringify(error));
             return NextResponse.json(
-                { error: 'Failed to send email' },
+                { error: 'Failed to send email', details: error.message },
                 { status: 500 }
             );
         }
 
-        return NextResponse.json({ success: true });
+        return NextResponse.json({ success: true, id: result?.id });
     } catch (err) {
         console.error('Contact API error:', err);
         return NextResponse.json(
-            { error: 'Internal server error' },
+            { error: 'Internal server error', details: err instanceof Error ? err.message : String(err) },
             { status: 500 }
         );
     }
