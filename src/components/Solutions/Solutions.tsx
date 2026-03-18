@@ -49,7 +49,7 @@ const products = [
     {
         icon: <DealerIcon />,
         title: 'Dealer Financing',
-        tagline: 'Pre-approved credit lines for your dealer network. OEMs get paid upfront.',
+        tagline: 'Pre-approved credit lines for your dealer network. Brands get paid upfront.',
         highlight: 'Pre-Approved',
         highlightLabel: 'credit lines',
         benefits: [
@@ -112,14 +112,15 @@ const Solutions = () => {
                     <span className={styles.badge}>CHANNEL FINANCE SUITE</span>
                     <h2 className={styles.title}>Four Products. One Platform. Zero Collateral.</h2>
                     <p className={styles.subtitle}>
-                        Each product is designed for a specific node in the supply chain. Together, they unlock liquidity across the entire OEM ecosystem.
+                        Each product is designed for a specific node in the supply chain. Together, they unlock liquidity across the entire Brand ecosystem.
                     </p>
                 </div>
 
                 <div className={styles.productsGrid}>
                     {products.map((product, index) => (
-                        <div
+                        <a
                             key={index}
+                            href={product.link}
                             className={`${styles.productCard} ${styles[product.color]}`}
                             style={{ animationDelay: `${index * 150}ms` }}
                         >
@@ -142,10 +143,10 @@ const Solutions = () => {
                                 ))}
                             </ul>
 
-                            <a href={product.link} className={styles.learnMore}>
+                            <span className={styles.learnMore}>
                                 Learn More <ArrowRight size={16} strokeWidth={2} />
-                            </a>
-                        </div>
+                            </span>
+                        </a>
                     ))}
                 </div>
             </div>

@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
                                 <p>We may share your information with:</p>
                                 <ul className={styles.list}>
                                     <li><strong>Financial Institution Partners:</strong> Banks and NBFCs that provide financing through our platform</li>
-                                    <li><strong>OEM/Corporate Partners:</strong> Businesses in your supply chain as required for transaction processing</li>
+                                    <li><strong>Brand/Corporate Partners:</strong> Businesses in your supply chain as required for transaction processing</li>
                                     <li><strong>Service Providers:</strong> Third-party vendors who assist in operating our platform</li>
                                     <li><strong>Credit Bureaus:</strong> For credit assessment and reporting purposes</li>
                                     <li><strong>Regulatory Authorities:</strong> As required by applicable laws and regulations</li>

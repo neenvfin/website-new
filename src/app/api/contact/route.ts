@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
         }
 
         const { error } = await resend.emails.send({
-            from: 'Neenv Website <noreply@info.neenvfin.com>',
+            from: 'Neenv Website <onboarding@info.neenvfin.com>',
             to: ['info@neenvfin.com'],
             replyTo: data.email,
             subject: `New Inquiry from ${data.name} (${data.companyName})`,

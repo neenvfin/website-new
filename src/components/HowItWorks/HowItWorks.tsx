@@ -24,7 +24,7 @@ const steps = [
         icon: <BrainCircuit size={20} strokeWidth={2} />,
         title: 'AI Credit Decisioning',
         time: 'Multi-Signal',
-        description: 'OEM data, bureau scores, and cash flow patterns — all in one model.',
+        description: 'Brand data, bureau scores, and cash flow patterns — all in one model.',
     },
     {
         number: 4,

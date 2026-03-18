@@ -39,12 +39,12 @@ export default function TermsAndConditionsPage() {
                                     Neenv operates a digital supply chain financing platform that connects businesses with financial institutions to facilitate:
                                 </p>
                                 <ul className={styles.list}>
-                                    <li><strong>Dealer Financing:</strong> Credit facilities for channel partners to purchase inventory from OEM/sellers</li>
+                                    <li><strong>Dealer Financing:</strong> Credit facilities for channel partners to purchase inventory from Brand/sellers</li>
                                     <li><strong>Supplier Financing:</strong> Early payment solutions for suppliers against approved invoices</li>
                                     <li><strong>Working Capital Loans:</strong> Short-term financing solutions for business operational needs</li>
                                 </ul>
                                 <p>
-                                    Neenv acts as a technology platform facilitating transactions between borrowers, OEMs/corporates, and financial institution partners. We are not a bank or NBFC and do not directly provide loans or credit.
+                                    Neenv acts as a technology platform facilitating transactions between borrowers, Brands/corporates, and financial institution partners. We are not a bank or NBFC and do not directly provide loans or credit.
                                 </p>
                             </div>
                         </section>

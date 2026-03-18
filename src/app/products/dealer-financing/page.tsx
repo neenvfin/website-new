@@ -1,53 +1,83 @@
 import { Metadata } from 'next';
+import { CreditCard, ShoppingCart, Banknote, CalendarCheck } from 'lucide-react';
 import Header from '@/components/Header/Header';
 import ProductHero from '@/components/ProductHero/ProductHero';
 import ProductDetails from '@/components/ProductDetails/ProductDetails';
-import CTA from '@/components/CTA/CTA';
+import DealerFinancingIllustration from '@/components/ProductIllustrations/DealerFinancingIllustration';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
     title: 'Dealer Financing - Neenv',
-    description: 'Enable dealers to grow purchases with pre-approved credit lines. OEMs receive upfront payments while dealers settle on flexible terms.',
+    description: 'Enable dealers to grow purchases with pre-approved credit lines. Brands receive upfront payments while dealers settle on flexible terms.',
     openGraph: {
         title: 'Dealer Financing - Neenv',
-        description: 'Pre-approved credit facilities for dealers. OEMs get paid upfront, dealers repay on flexible terms. Boost sales and strengthen channel relationships.',
+        description: 'Pre-approved credit facilities for dealers. Brands get paid upfront, dealers repay on flexible terms. Boost sales and strengthen channel relationships.',
         type: 'website',
     },
 };
 
-const steps = [
-    {
-        title: 'Credit Line Setup',
-        description: 'A pre-approved credit facility is established for dealers based on their relationship with the OEM/seller.',
-    },
-    {
-        title: 'Purchase Goods',
-        description: 'Dealers use their credit line to purchase inventory from the OEM/seller without immediate payment.',
-    },
-    {
-        title: 'OEM Gets Paid',
-        description: 'The financial institution pays the OEM/seller upfront, ensuring immediate cash flow.',
-    },
-    {
-        title: 'Dealer Repayment',
-        description: 'Dealers settle their dues with the financial institution on mutually agreed terms.',
-    },
-];
+const howItWorks = {
+    sectionTitle: 'From Setup to Settlement',
+    steps: [
+        {
+            title: 'Credit Line Setup',
+            description: 'Pre-approved facility established using dealer\u2019s trade history with the brand.',
+            icon: <CreditCard size={16} strokeWidth={2} />,
+        },
+        {
+            title: 'Purchase Goods',
+            description: 'Dealer uses credit line to purchase inventory without immediate payment.',
+            icon: <ShoppingCart size={16} strokeWidth={2} />,
+        },
+        {
+            title: 'Brand Gets Paid',
+            description: 'Lender pays the brand upfront. No receivables risk for the brand.',
+            icon: <Banknote size={16} strokeWidth={2} />,
+        },
+        {
+            title: 'Dealer Repays',
+            description: 'Dealer settles dues with the lender on agreed terms. EMI or bullet.',
+            icon: <CalendarCheck size={16} strokeWidth={2} />,
+        },
+    ],
+};
 
-const benefits = [
-    {
-        title: 'Accelerate Sales Growth',
-        description: 'Enable dealers to purchase more, expanding your market reach and driving higher sales volumes.',
+const benefits = {
+    left: {
+        title: 'Key Benefits for Dealers',
+        items: [
+            {
+                headline: 'No Collateral Required',
+                description: 'Your anchor relationship is your credential. No property papers, no fixed deposits.',
+            },
+            {
+                headline: 'Instant Liquidity When You Need It',
+                description: 'Stop waiting 30\u201360 days for credit approvals. Funds reach your account within 72 hours so you never miss a purchase window.',
+            },
+            {
+                headline: 'Flexible Repayment',
+                description: 'EMI or end-of-term, matched to your cash conversion cycle. Pay as your business earns.',
+            },
+        ],
     },
-    {
-        title: 'Reduce Days Sales Outstanding',
-        description: 'Receive upfront payments from the financial institution, improving your cash conversion cycle.',
+    right: {
+        title: 'Key Benefits for Brands',
+        items: [
+            {
+                headline: 'Boost Channel Sales',
+                description: 'Credit-enabled dealers buy more, buy bigger, and buy often. Watch per-dealer revenue climb without adding a single new dealer.',
+            },
+            {
+                headline: 'Faster Collections, Better Cash Cycle',
+                description: 'Get paid upfront by the lender on every order. Your DSO drops to zero on financed transactions.',
+            },
+            {
+                headline: 'Build Dealer Loyalty That Sticks',
+                description: 'Dealers stay with brands that solve their biggest problem \u2014 working capital. Financing through your network becomes a reason to never leave.',
+            },
+        ],
     },
-    {
-        title: 'Strengthen Dealer Relationships',
-        description: 'Offer flexible payment terms that build loyalty and improve dealer performance across your network.',
-    },
-];
+};
 
 export default function DealerFinancingPage() {
     return (
@@ -57,10 +87,10 @@ export default function DealerFinancingPage() {
                 <ProductHero
                     title="Dealer Financing"
                     subtitle="Credit Facility for Channel Partners"
-                    description="A pre-approved credit facility that empowers dealers to increase their purchases while OEM/sellers receive upfront payments. Dealers benefit from extended payment terms, settling their dues at a later date with the financial institution."
+                    description="A pre-approved credit facility that empowers dealers to increase their purchases while Brand/sellers receive upfront payments. Dealers benefit from extended payment terms, settling their dues at a later date with the financial institution."
+                    flowGraphic={<DealerFinancingIllustration />}
                 />
-                <ProductDetails steps={steps} benefits={benefits} />
-                <CTA />
+                <ProductDetails howItWorks={howItWorks} benefits={benefits} />
             </main>
             <Footer />
         </>

@@ -1,0 +1,586 @@
+/* ===== PRODUCT MOCKUP SHARED STYLES ===== */
+
+/* Card container */
+.mockupCard {
+    background: #ffffff;
+    border: 1px solid #e2e5eb;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(26, 45, 122, 0.06);
+    padding: 24px;
+    max-width: 420px;
+    width: 100%;
+    overflow: hidden;
+    animation: cardIn 0.5s ease-out 0.2s both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mockupCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(26, 45, 122, 0.1);
+}
+
+/* Header */
+.headerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.headerName {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.subHeader {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 2px;
+}
+
+.subHeaderMuted {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.bigAmount {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a2d7a;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: #f0f0f4;
+    margin: 14px 0;
+}
+
+/* Label */
+.label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9ca3af;
+    margin-bottom: 6px;
+}
+
+/* Status badge */
+.statusBadge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.statusSuccess {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.statusWarning {
+    background: #fffbeb;
+    color: #92400e;
+}
+
+.statusInfo {
+    background: #eff6ff;
+    color: #1a2d7a;
+}
+
+.statusNeutral {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+/* Green tick row */
+.tickRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #1a1a2e;
+}
+
+.tickIcon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background: #0a714e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: tickIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.tickIcon svg {
+    width: 12px;
+    height: 12px;
+}
+
+/* Red cross row */
+.crossRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #1a1a2e;
+}
+
+.crossIcon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background: #dc2626;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: tickIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.crossIcon svg {
+    width: 10px;
+    height: 10px;
+}
+
+/* Stat chips */
+.statsRow {
+    display: flex;
+    gap: 8px;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.statChip {
+    flex: 1;
+    background: #f8f9fc;
+    border: 1px solid #e2e5eb;
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-align: center;
+}
+
+.statValue {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a2d7a;
+    line-height: 1.2;
+}
+
+.statValueGreen {
+    color: #0a714e;
+}
+
+.statLabel {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+/* Progress bar */
+.progressTrack {
+    width: 100%;
+    height: 6px;
+    background: #e2e5eb;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #0a714e, #5d71c4);
+    animation: fillBar 0.8s ease-out 0.5s both;
+}
+
+.progressFillGreen {
+    background: #0a714e;
+    animation: fillBar 0.8s ease-out 0.5s both;
+}
+
+.progressFillRed {
+    background: #fecaca;
+    animation: fillBar 0.8s ease-out 0.5s both;
+}
+
+.progressMeta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+/* Benefit pills row */
+.pillsRow {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.pillGreen {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.pillNavy {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #1a2d7a;
+    color: #ffffff;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.pillAmber {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #fffbeb;
+    color: #92400e;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Witty quote */
+.wittyQuote {
+    padding-top: 12px;
+    font-size: 12px;
+    font-style: italic;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.wittyAttribution {
+    font-size: 11px;
+    font-weight: 600;
+    color: #1a2d7a;
+    font-style: normal;
+    margin-top: 4px;
+}
+
+/* ===== WORKING CAPITAL: Timeline ===== */
+.timelineStep {
+    display: flex;
+    gap: 12px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.timelineStep:last-child {
+    padding-bottom: 0;
+}
+
+.timelineLeft {
+    width: 56px;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 11px;
+    color: #9ca3af;
+    padding-top: 2px;
+}
+
+.timelineDotCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.timelineDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.timelineDotLarge {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    z-index: 1;
+    animation: softPulse 2s ease-in-out infinite;
+}
+
+.timelineLine {
+    width: 2px;
+    flex: 1;
+    background: #e2e5eb;
+    margin-top: 4px;
+}
+
+.timelineRight {
+    flex: 1;
+    min-width: 0;
+}
+
+.timelineEvent {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.timelineEventGreen {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a714e;
+}
+
+.timelineSub {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 1px;
+}
+
+.timelineBadges {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+/* Comparison bar */
+.comparisonRow {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.comparisonItem {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.comparisonGreen {
+    background: #ecfdf5;
+}
+
+.comparisonRed {
+    background: #fef2f2;
+}
+
+.comparisonLabel {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.comparisonValue {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.comparisonBar {
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 6px;
+}
+
+/* ===== FACTORING: Invoice ===== */
+.invoiceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoiceDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.invoiceDetailsLabel {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.invoiceDetailsValue {
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+/* Horizontal status steps */
+.statusSteps {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.statusStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.statusStepDot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.statusStepDotGlow {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    animation: softPulse 2s ease-in-out infinite;
+}
+
+.statusStepLabel {
+    font-size: 11px;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.statusStepConnector {
+    flex: 0.5;
+    height: 2px;
+    background: #e2e5eb;
+    margin-top: -18px;
+    align-self: flex-start;
+    margin-top: 14px;
+}
+
+/* ===== SUPPLIER: Split card ===== */
+.splitLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.splitCol {
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.splitColRed {
+    background: #fef2f2;
+}
+
+.splitColGreen {
+    background: #ecfdf5;
+}
+
+.splitHeader {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.splitPayment {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.splitBarLabel {
+    font-size: 11px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes cardIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tickIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(1.15);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fillBar {
+    from { width: 0%; }
+}
+
+@keyframes softPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(10, 113, 78, 0.15);
+    }
+    50% {
+        box-shadow: 0 0 0 6px rgba(10, 113, 78, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mockupCard,
+    .tickIcon,
+    .crossIcon,
+    .progressFill,
+    .progressFillGreen,
+    .progressFillRed,
+    .timelineDotLarge,
+    .statusStepDotGlow {
+        animation: none !important;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mockupCard {
+        max-width: 360px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mockupCard {
+        max-width: 100%;
+        padding: 20px;
+    }
+}

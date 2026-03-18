@@ -67,12 +67,12 @@ const Hero = () => {
                     </div>
 
                     <h1 className={styles.title}>
-                        Channel finance for India&apos;s
-                        <span className={styles.highlight}> supply chains</span>
+                        Unlocking Credit in India&apos;s
+                        <span className={styles.highlight}> Supply Chain</span>
                     </h1>
 
                     <p className={styles.description}>
-                        Collateral-free credit for dealers, suppliers, and distributors in OEM-led ecosystems. Disbursed in 72 hours, not days.
+                    Financially empowering under-served MICRO & SMALL business partners of Indian Corporates.
                     </p>
 
                     <div className={styles.actions}>
@@ -91,7 +91,7 @@ const Hero = () => {
                         </div>
                         <div className={styles.metricDivider}></div>
                         <div className={styles.metric}>
-                            <span className={styles.metricValue}>Upto ₹ 3Cr</span>
+                            <span className={styles.metricValue}>Upto ₹ 2Cr</span>
                             <span className={styles.metricLabel}>Per Partner</span>
                         </div>
                         <div className={styles.metricDivider}></div>
@@ -109,7 +109,7 @@ const Hero = () => {
                                 <DealerIcon />
                             </div>
                             <span className={styles.gridCardTitle}>Dealer Financing</span>
-                            <span className={styles.gridCardSub}>Pre-approved credit lines</span>
+                            <span className={styles.gridCardSub}>Credit lines powered by Brand data</span>
                         </div>
                         <div className={styles.gridCard}>
                             <div className={styles.gridCardIcon}>
@@ -123,7 +123,7 @@ const Hero = () => {
                                 <InvoiceIcon />
                             </div>
                             <span className={styles.gridCardTitle}>Factoring</span>
-                            <span className={styles.gridCardSub}>Same-day receivables</span>
+                            <span className={styles.gridCardSub}>Discounting of receivables</span>
                         </div>
                         <div className={styles.gridCard}>
                             <div className={styles.gridCardIcon}>

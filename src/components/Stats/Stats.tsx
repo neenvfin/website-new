@@ -38,7 +38,7 @@ const stats = [
         icon: <BadgeIndianRupee size={24} strokeWidth={1.5} />,
         value: 'Up to ₹3 Cr',
         label: 'Per Channel Partner',
-        description: 'Collateral-free limits based on OEM strength',
+        description: 'Collateral-free limits based on Brand strength',
     },
     {
         icon: <Fingerprint size={24} strokeWidth={1.5} />,

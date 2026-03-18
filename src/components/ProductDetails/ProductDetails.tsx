@@ -1,94 +1,117 @@
 'use client';
 
+import { ReactNode } from 'react';
 import styles from './ProductDetails.module.css';
 
 interface Step {
     title: string;
     description: string;
+    icon: ReactNode;
 }
 
-interface Benefit {
-    title: string;
+interface BenefitItem {
+    headline: string;
     description: string;
 }
 
+interface BenefitCard {
+    title: string;
+    items: BenefitItem[];
+}
+
 interface ProductDetailsProps {
-    steps: Step[];
-    benefits: Benefit[];
+    howItWorks: {
+        sectionTitle: string;
+        steps: Step[];
+    };
+    benefits: {
+        left: BenefitCard;
+        right: BenefitCard;
+    };
 }
 
 const CheckIcon = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a714e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="20 6 9 17 4 12" />
     </svg>
 );
 
-const fiBenefits = [
-    'Cloud-based digital infrastructure for seamless operations',
-    'End-to-end solution from loan origination to risk management',
-    'Streamlined corporate onboarding and network services',
-    'Quick and efficient integration with corporate partners',
-];
-
-const ProductDetails = ({ steps, benefits }: ProductDetailsProps) => {
+const ProductDetails = ({ howItWorks, benefits }: ProductDetailsProps) => {
     return (
-        <section className={styles.details}>
-            <div className="container">
-                <div className={styles.grid}>
-                    {/* How It Works */}
-                    <div className={styles.section}>
-                        <h2 className={styles.sectionTitle}>How It Works</h2>
-                        <div className={styles.steps}>
-                            {steps.map((step, index) => (
-                                <div key={index} className={styles.step}>
+        <>
+            {/* Section A — Horizontal How It Works */}
+            <section className={styles.howItWorks}>
+                <div className="container">
+                    <div className={styles.header}>
+                        <span className={styles.badge}>HOW IT WORKS</span>
+                        <h2 className={styles.title}>{howItWorks.sectionTitle}</h2>
+                    </div>
+
+                    <div className={styles.timeline}>
+                        <div className={styles.timelineLine} />
+                        {howItWorks.steps.map((step, index) => (
+                            <div
+                                key={index}
+                                className={styles.step}
+                                style={{ animationDelay: `${index * 150}ms` }}
+                            >
+                                <div className={styles.stepNode}>
                                     <div className={styles.stepNumber}>{index + 1}</div>
-                                    <div className={styles.stepContent}>
-                                        <h3 className={styles.stepTitle}>{step.title}</h3>
-                                        <p className={styles.stepDescription}>{step.description}</p>
-                                    </div>
+                                    <div className={styles.stepIcon}>{step.icon}</div>
                                 </div>
-                            ))}
-                        </div>
+                                <div className={styles.stepContent}>
+                                    <h3 className={styles.stepTitle}>{step.title}</h3>
+                                    <p className={styles.stepDescription}>{step.description}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
+                </div>
+            </section>
 
-                    {/* Key Benefits */}
-                    <div className={styles.section}>
-                        <h2 className={styles.sectionTitle}>Key Benefits</h2>
-                        <div className={styles.benefits}>
-                            {benefits.map((benefit, index) => (
-                                <div key={index} className={styles.benefit}>
-                                    <div className={styles.benefitIcon}>
-                                        <CheckIcon />
+            {/* Section B — Dual Benefits Cards */}
+            <section className={styles.benefitsSection}>
+                <div className="container">
+                    <div className={styles.benefitsGrid}>
+                        {/* Left Card */}
+                        <div className={`${styles.benefitCard} ${styles.benefitCardLeft}`}>
+                            <h3 className={styles.benefitCardTitle}>{benefits.left.title}</h3>
+                            <div className={styles.benefitItems}>
+                                {benefits.left.items.map((item, index) => (
+                                    <div key={index} className={styles.benefitItem}>
+                                        <div className={styles.benefitCheckIcon}>
+                                            <CheckIcon />
+                                        </div>
+                                        <div className={styles.benefitItemContent}>
+                                            <h4 className={styles.benefitHeadline}>{item.headline}</h4>
+                                            <p className={styles.benefitDescription}>{item.description}</p>
+                                        </div>
                                     </div>
-                                    <div className={styles.benefitContent}>
-                                        <h3 className={styles.benefitTitle}>{benefit.title}</h3>
-                                        <p className={styles.benefitDescription}>{benefit.description}</p>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Right Card */}
+                        <div className={`${styles.benefitCard} ${styles.benefitCardRight}`}>
+                            <h3 className={styles.benefitCardTitle}>{benefits.right.title}</h3>
+                            <div className={styles.benefitItems}>
+                                {benefits.right.items.map((item, index) => (
+                                    <div key={index} className={styles.benefitItem}>
+                                        <div className={styles.benefitCheckIcon}>
+                                            <CheckIcon />
+                                        </div>
+                                        <div className={styles.benefitItemContent}>
+                                            <h4 className={styles.benefitHeadline}>{item.headline}</h4>
+                                            <p className={styles.benefitDescription}>{item.description}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                {/* For Financial Institutions */}
-                <div className={styles.fiSection}>
-                    <div className={styles.fiCard}>
-                        <h2 className={styles.fiTitle}>For Financial Institutions</h2>
-                        <p className={styles.fiSubtitle}>Discover our comprehensive Supply Chain Finance suite</p>
-                        <div className={styles.fiBenefits}>
-                            {fiBenefits.map((benefit, index) => (
-                                <div key={index} className={styles.fiBenefit}>
-                                    <div className={styles.fiCheckIcon}>
-                                        <CheckIcon />
-                                    </div>
-                                    <span>{benefit}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 

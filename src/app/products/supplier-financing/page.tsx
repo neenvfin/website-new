@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
+import { Upload, CheckCircle, DollarSign, Calendar } from 'lucide-react';
 import Header from '@/components/Header/Header';
 import ProductHero from '@/components/ProductHero/ProductHero';
 import ProductDetails from '@/components/ProductDetails/ProductDetails';
-import CTA from '@/components/CTA/CTA';
+import SupplierFinancingIllustration from '@/components/ProductIllustrations/SupplierFinancingIllustration';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
     title: 'Supplier Financing - Neenv',
-    description: 'Enable vendors to receive early payments against approved invoices, funded by Financial Institutions, without impacting the OEM corporate balance sheet.',
+    description: 'Enable vendors to receive early payments against approved invoices, funded by Financial Institutions, without impacting the Brand corporate balance sheet.',
     openGraph: {
         title: 'Supplier Financing - Neenv',
         description: 'Early payments for suppliers at competitive rates. Off-balance sheet funding through partnered banks and NBFCs.',
@@ -15,39 +16,68 @@ export const metadata: Metadata = {
     },
 };
 
-const steps = [
-    {
-        title: 'Credit Limit Setup',
-        description: 'Credit limits are established for each supplier based on their profile and transaction history.',
-    },
-    {
-        title: 'Invoice Approval',
-        description: 'The OEM corporate reviews and approves supplier invoices on the platform.',
-    },
-    {
-        title: 'Early Payment to Suppliers',
-        description: 'Neenv facilitates funding through partnered banks and NBFCs, enabling suppliers to receive early payments at competitive rates.',
-    },
-    {
-        title: 'Repayment on Due Date',
-        description: 'The OEM (buyer) repays the Financial Institution on the original invoice due date.',
-    },
-];
+const howItWorks = {
+    sectionTitle: 'From Delivery to Payment',
+    steps: [
+        {
+            title: 'Invoice Submitted',
+            description: 'Supplier submits invoice against goods delivered to the brand.',
+            icon: <Upload size={16} strokeWidth={2} />,
+        },
+        {
+            title: 'Brand Approves',
+            description: 'Brand confirms receipt and approves the invoice on-platform.',
+            icon: <CheckCircle size={16} strokeWidth={2} />,
+        },
+        {
+            title: 'Supplier Gets Paid',
+            description: 'Lender pays the supplier immediately, typically at a small discount.',
+            icon: <DollarSign size={16} strokeWidth={2} />,
+        },
+        {
+            title: 'Brand Pays on Due Date',
+            description: 'Brand settles the full invoice amount with the lender on original terms.',
+            icon: <Calendar size={16} strokeWidth={2} />,
+        },
+    ],
+};
 
-const benefits = [
-    {
-        title: 'Off-Balance Sheet Funding',
-        description: 'Suppliers get paid early without burdening the OEM corporate balance sheet.',
+const benefits = {
+    left: {
+        title: 'Key Benefits for Suppliers',
+        items: [
+            {
+                headline: 'Paid on Delivery',
+                description: 'Get paid when you deliver, not 90 days later. Cash flow you can plan around.',
+            },
+            {
+                headline: 'No New Debt',
+                description: 'Early payment against approved invoices. No loan, no collateral, no interest burden on you.',
+            },
+            {
+                headline: 'Scale With Confidence',
+                description: 'Predictable cash flow means you can take on larger orders and invest in production capacity.',
+            },
+        ],
     },
-    {
-        title: 'Strengthened Supply Chain',
-        description: 'Early payments improve supplier loyalty, ensure supply continuity, and unlock better pricing.',
+    right: {
+        title: 'Key Benefits for Brands',
+        items: [
+            {
+                headline: 'Better Pricing From Suppliers',
+                description: 'Suppliers price better when they know payment is immediate. Negotiate from strength.',
+            },
+            {
+                headline: 'Reliable Supply Chain',
+                description: 'Well-funded suppliers deliver on time. Fewer delays, fewer excuses, fewer production gaps.',
+            },
+            {
+                headline: 'Build Supplier Loyalty That Sticks',
+                description: 'Early payment makes you the preferred buyer. Suppliers prioritize brands that solve their cash flow.',
+            },
+        ],
     },
-    {
-        title: 'Competitive Financing Rates',
-        description: 'Suppliers benefit from attractive rates through our network of partnered banks and NBFCs.',
-    },
-];
+};
 
 export default function SupplierFinancingPage() {
     return (
@@ -57,10 +87,10 @@ export default function SupplierFinancingPage() {
                 <ProductHero
                     title="Supplier Financing"
                     subtitle="Vendor Financing Program"
-                    description="Vendors receive early payments against approved invoices, funded by Financial Institutions, without burdening the OEM corporate's balance sheet. Strengthen your supply chain with timely payments while maintaining healthy cash flows and working capital."
+                    description="Vendors receive early payments against approved invoices, funded by Financial Institutions, without burdening the Brand corporate's balance sheet. Strengthen your supply chain with timely payments while maintaining healthy cash flows and working capital."
+                    flowGraphic={<SupplierFinancingIllustration />}
                 />
-                <ProductDetails steps={steps} benefits={benefits} />
-                <CTA />
+                <ProductDetails howItWorks={howItWorks} benefits={benefits} />
             </main>
             <Footer />
         </>
