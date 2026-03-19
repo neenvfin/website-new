@@ -22,7 +22,7 @@ const Footer = () => {
                             />
                         </Link>
                         <p className={styles.brandDescription}>
-                            AI-native supply chain finance platform powering last-mile credit for India&apos;s Brand-led ecosystems. Digital-first. Collateral-free.
+                            AI Native Supply Chain Finance Platform empowering under-served MICRO & SMALL business partners for India's brand led ecosystem. Digital First. Collateral Free.
                         </p>
                         {/* <div className={styles.social}>
                             <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn">
