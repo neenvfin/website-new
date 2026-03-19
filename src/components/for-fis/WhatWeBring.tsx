@@ -55,7 +55,7 @@ const WhatWeBring = () => {
         <section className={styles.section}>
             <div className="container">
                 <div className={styles.header}>
-                    <span className={styles.badge}>Our Offerings</span>
+                    <span className={`${styles.badge} badge-animated`}>Our Offerings</span>
                     <h2 className={styles.title}>What We Bring to the Table</h2>
                 </div>
                 <div className={styles.grid}>

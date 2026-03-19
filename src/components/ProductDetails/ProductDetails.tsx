@@ -43,7 +43,7 @@ const ProductDetails = ({ howItWorks, benefits }: ProductDetailsProps) => {
             <section className={styles.howItWorks}>
                 <div className="container">
                     <div className={styles.header}>
-                        <span className={styles.badge}>HOW IT WORKS</span>
+                        <span className={`${styles.badge} badge-animated`}>HOW IT WORKS</span>
                         <h2 className={styles.title}>{howItWorks.sectionTitle}</h2>
                     </div>
 

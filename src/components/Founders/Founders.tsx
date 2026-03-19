@@ -42,7 +42,7 @@ const Founders = () => {
         <section className={styles.founders}>
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <span className={styles.badge}>MEET THE FOUNDERS</span>
+                    <span className={`${styles.badge} badge-animated`}>MEET THE FOUNDERS</span>
                     <h2 className={styles.title}>Built by the People Who've Done This Before!</h2>
                 </div>
 

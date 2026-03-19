@@ -49,11 +49,11 @@ const products = [
     {
         icon: <DealerIcon />,
         title: 'Dealer Financing',
-        tagline: 'Brand led and data powered credit lines for your dealer network.',
+        tagline: 'Brand led and data powered Credit Facilities for your dealer network.',
         highlight: 'Data Driven',
         highlightLabel: 'customised solutions',
         benefits: [
-            'Credit Line Setup',
+            'Credit Facility Setup',
             'Purchase Goods & Brand Gets Paid',
             'Dealer Repays on Terms',
         ],
@@ -109,7 +109,7 @@ const Solutions = () => {
         <section id="solutions" className={styles.solutions}>
             <div className={styles.solutionsContainer}>
                 <div className={styles.header}>
-                    <span className={styles.badge}>CHANNEL FINANCE SUITE</span>
+                    <span className={`${styles.badge} badge-animated`}>CHANNEL FINANCE SUITE</span>
                     <h2 className={styles.title}>Four Products. One Platform. Zero Collateral.</h2>
                     <p className={styles.subtitle}>
                         Each product is designed for a specific node in the supply chain. Together, they unlock liquidity across the entire Brand ecosystem.

@@ -10,7 +10,7 @@ const FiHero = () => {
             <div className="container">
                 <div className={styles.heroGrid}>
                     <div className={styles.heroContent}>
-                        <span className={styles.badge}>For Banks &amp; NBFCs</span>
+                        <span className={`${styles.badge} badge-animated`}>For Banks &amp; NBFCs</span>
 
                         <h1 className={styles.title}>
                             Your Gateway to India&apos;s{' '}

@@ -59,7 +59,7 @@ const Stats = () => {
         <section id="about" className={styles.stats}>
             <div className={`container ${styles.statsContainer}`}>
                 <div className={styles.header}>
-                    <span className={styles.badge}>WHY NEENV</span>
+                    <span className={`${styles.badge} badge-animated`}>WHY NEENV</span>
                     <h2 className={styles.title}>Infrastructure-Grade Channel Finance</h2>
                     <p className={styles.subtitle}>
                         Purpose-built for Brand-led ecosystems. Not a generic lending platform with a supply chain label.

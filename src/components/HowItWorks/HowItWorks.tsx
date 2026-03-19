@@ -10,7 +10,7 @@ const steps = [
         icon: <BarChart3 size={20} strokeWidth={2} />,
         title: 'ERP-Led Pre-Qual',
         time: 'Data-Driven',
-        description: 'ERP transaction signals power Brand Led offers automatically.',
+        description: 'ERP transaction data evaluates borrowers on real time basis.',
     },
     {
         number: 2,
@@ -47,7 +47,7 @@ const HowItWorks = () => {
         <section id="how-it-works" className={styles.howItWorks}>
             <div className="container">
                 <div className={styles.header}>
-                    <span className={styles.badge}>HOW IT WORKS</span>
+                    <span className={`${styles.badge} badge-animated`}>HOW IT WORKS</span>
                     <h2 className={styles.title}>Smart Process. Seamless Experience.</h2>
                     <p className={styles.subtitle}>
                         Five steps from pre-qualification to disbursal. Fully digital, AI-native, and built for scale.

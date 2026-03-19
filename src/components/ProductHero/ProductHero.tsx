@@ -33,7 +33,7 @@ const ProductHero = ({
                             Back to Home
                         </Link>
 
-                        <span className={styles.badge}>{subtitle}</span>
+                        <span className={`${styles.badge} badge-animated`}>{subtitle}</span>
 
                         <h1 className={styles.title}>{title}</h1>
 

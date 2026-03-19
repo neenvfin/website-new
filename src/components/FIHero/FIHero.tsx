@@ -10,7 +10,7 @@ const FIHero = () => {
             <div className="container">
                 <div className={styles.heroGrid}>
                     <div className={styles.heroContent}>
-                        <span className={styles.badge}>For FIs and Banks</span>
+                        <span className={`${styles.badge} badge-animated`}>For FIs and Banks</span>
                         <h1 className={styles.title}>
                             Comprehensive Digital SCF Infrastructure for Financial Institutions
                         </h1>
