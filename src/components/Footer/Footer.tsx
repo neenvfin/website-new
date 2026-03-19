@@ -37,9 +37,9 @@ const Footer = () => {
                     <div className={styles.column}>
                         <h4>Company</h4>
                         <div className={styles.columnLinks}>
-                            <Link href="/#founders" className={styles.columnLink}>About Us</Link>
                             <Link href="/#how-it-works" className={styles.columnLink}>How It Works</Link>
                             <Link href="/for-financial-institutions" className={styles.columnLink}>For FIs</Link>
+                            <Link href="/#founders" className={styles.columnLink}>About Us</Link>
                         </div>
                     </div>
 

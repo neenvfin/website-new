@@ -49,13 +49,13 @@ const products = [
     {
         icon: <ChannelIcon />,
         title: 'Channel Financing',
-        tagline: 'Brand led and data powered Credit Facilities for your dealer network.',
+        tagline: 'Brand led and data powered Credit Facilities for your channel network.',
         highlight: 'Data Driven',
         highlightLabel: 'customised solutions',
         benefits: [
             'Credit Facility Setup',
             'Purchase Goods & Brand Gets Paid',
-            'Dealer Repays on Terms',
+            'Channel Partner Repays on Terms',
         ],
         color: 'primary',
         link: '/products/channel-financing',
@@ -96,7 +96,7 @@ const products = [
         highlightLabel: 'price discovery',
         benefits: [
             'Invoice Submitted & Approved',
-            'Supplier Gets Paid Immediately',
+            'Vendor Gets Paid Immediately',
             'Brand Pays on Due Date',
         ],
         color: 'accent',

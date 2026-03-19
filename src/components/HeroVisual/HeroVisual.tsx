@@ -196,16 +196,8 @@ const HeroVisual = () => (
                     <animate attributeName="opacity" values="0.04;0.1;0.04" dur="3.5s" repeatCount="indefinite" />
                 </circle>
                 <circle cx="414" cy="208" r="46" fill="url(#hv-grad)" filter="url(#hv-glow)" />
-                {/* Grid icon */}
-                <rect x="397" y="190" width="34" height="26" rx="3" fill="none" stroke="#fff" strokeWidth="1.5" />
-                <rect x="397" y="190" width="34" height="5" rx="2" fill="#fff" opacity="0.2" />
-                <rect x="402" y="200" width="5" height="4.5" rx="1" fill="#fff" opacity="0.4" />
-                <rect x="411.5" y="200" width="5" height="4.5" rx="1" fill="#fff" opacity="0.3" />
-                <rect x="421" y="200" width="5" height="4.5" rx="1" fill="#fff" opacity="0.4" />
-                <rect x="402" y="208" width="5" height="4.5" rx="1" fill="#fff" opacity="0.3" />
-                <rect x="421" y="208" width="5" height="4.5" rx="1" fill="#fff" opacity="0.3" />
-                <rect x="411.5" y="209" width="5" height="7" rx="1.5" fill={C.goldLight} opacity="0.6" />
-                <text x="414" y="230" textAnchor="middle" fill="#fff" fontSize="8.5" fontWeight="700" fontFamily="inherit" letterSpacing="0.08em">NEENV</text>
+                {/* Neenv white logo */}
+                <image href="/images/logos/neenv-white-logo.png" x="384" y="192" width="60" height="32" />
                 {/* Orbiting dots */}
                 <circle r="4" fill={C.green} opacity="0.85">
                     <animate attributeName="cx" values="414;476;414;352;414" dur="7s" repeatCount="indefinite" />

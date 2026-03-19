@@ -47,20 +47,8 @@ const FiIllustration = () => (
                 {/* Core circle */}
                 <circle cx="240" cy="220" r="52" fill="url(#fi-grad)" filter="url(#fi-glow)" />
 
-                {/* Building icon inside */}
-                <rect x="221" y="200" width="38" height="30" rx="3" fill="none" stroke="#ffffff" strokeWidth="1.5" />
-                <rect x="221" y="200" width="38" height="6" rx="2" fill="#ffffff" opacity="0.2" />
-                {/* Windows */}
-                <rect x="227" y="211" width="6" height="5" rx="1" fill="#ffffff" opacity="0.4" />
-                <rect x="237" y="211" width="6" height="5" rx="1" fill="#ffffff" opacity="0.3" />
-                <rect x="247" y="211" width="6" height="5" rx="1" fill="#ffffff" opacity="0.4" />
-                <rect x="227" y="220" width="6" height="5" rx="1" fill="#ffffff" opacity="0.3" />
-                <rect x="247" y="220" width="6" height="5" rx="1" fill="#ffffff" opacity="0.3" />
-                {/* Door */}
-                <rect x="237" y="222" width="6" height="8" rx="1.5" fill="#f59e0b" opacity="0.6" />
-
-                {/* Neenv label */}
-                <text x="240" y="245" textAnchor="middle" fill="#ffffff" fontSize="9" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif" letterSpacing="0.08em">NEENV</text>
+                {/* Neenv white logo */}
+                <image href="/images/logos/neenv-white-logo.png" x="205" y="206" width="70" height="37" />
 
                 {/* Orbiting dots */}
                 <circle r="4.5" fill="#0a714e" opacity="0.85">

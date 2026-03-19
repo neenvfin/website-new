@@ -12,7 +12,7 @@ const LinkedInIcon = () => (
 const founders = [
     {
         name: 'Vikash Goenka',
-        role: 'Co-founder',
+        role: 'Co-Founder',
         image: '/images/founders/Vikash Photo.png',
         summary: '25+ years of Banking experience in Client Coverage, Trade Finance, Credit & Risk Management.',
         highlights: [
@@ -24,7 +24,7 @@ const founders = [
     },
     {
         name: 'Abhishek Lall',
-        role: 'Co-founder',
+        role: 'Co-Founder',
         image: '/images/founders/Abhishek Photo.png',
         summary: '25+ years of Sales experience in SME & Supply Chain Finance domain across Banks and Fintech.',
         highlights: [

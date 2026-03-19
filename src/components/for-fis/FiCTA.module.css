@@ -1,5 +1,5 @@
 .section {
-    padding: var(--space-8) 0 var(--space-20);
+    padding: var(--space-20) 0;
 }
 
 .card {
@@ -34,7 +34,7 @@
 .personImg {
     display: block;
     width: auto;
-    height: 480px;
+    height: 360px;
     object-fit: contain;
     object-position: bottom;
 }

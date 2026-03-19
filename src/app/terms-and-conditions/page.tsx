@@ -40,8 +40,9 @@ export default function TermsAndConditionsPage() {
                                 </p>
                                 <ul className={styles.list}>
                                     <li><strong>Channel Financing:</strong> Credit facilities for channel partners to purchase inventory from Brand/sellers</li>
-                                    <li><strong>Supplier Financing:</strong> Early payment solutions for suppliers against approved invoices</li>
                                     <li><strong>Working Capital Loans:</strong> Short-term financing solutions for business operational needs</li>
+                                    <li><strong>Factoring:</strong> Accelerate cash flow by converting trade receivables into immediate working capital</li>
+                                    <li><strong>Supplier Financing:</strong> Early payment solutions for suppliers against approved invoices</li>
                                 </ul>
                                 <p>
                                     Neenv acts as a technology platform facilitating transactions between borrowers, Brands/corporates, and financial institution partners. We are not a bank or NBFC and do not directly provide loans or credit.

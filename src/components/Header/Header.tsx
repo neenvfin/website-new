@@ -72,9 +72,9 @@ const Header = () => {
     }, [isMobileMenuOpen]);
 
     const navItems = [
-        { label: 'About Us', href: '/#founders' },
         { label: 'How It Works', href: '/#how-it-works' },
         { label: 'For FIs', href: '/for-financial-institutions' },
+        { label: 'About Us', href: '/#founders' },
         
         
     ];
