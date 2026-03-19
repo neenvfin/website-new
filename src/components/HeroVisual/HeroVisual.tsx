@@ -222,7 +222,7 @@ const HeroVisual = () => (
                 <rect x="258" y="30" width="84" height="5" rx="1" fill={C.navy} opacity="0.12" />
                 {/* Columns */}
                 {[0, 1, 2, 3, 4].map((i) => (
-                    <rect key={`col${i}`} x={267 + i * 13} y="40" width="6" height="40" rx="1.5" fill={C.blue} opacity="0.18" stroke={C.navy} strokeWidth="0.3" opacity="0.2" />
+                    <rect key={`col${i}`} x={267 + i * 13} y="40" width="6" height="40" rx="1.5" fill={C.blue} opacity="0.2" stroke={C.navy} strokeWidth="0.3" />
                 ))}
                 {/* Windows between columns — warm glow */}
                 <rect x="275" y="46" width="5" height="7" rx="1" fill={C.goldLight} opacity="0.25" />
@@ -234,7 +234,7 @@ const HeroVisual = () => (
                 <rect x="301" y="60" width="5" height="7" rx="1" fill={C.blue} opacity="0.15" />
                 <rect x="314" y="60" width="5" height="7" rx="1" fill={C.goldLight} opacity="0.15" />
                 {/* Entrance */}
-                <rect x="292" y="72" width="16" height="18" rx="3" fill={C.navy} opacity="0.06" stroke={C.navy} strokeWidth="0.4" opacity="0.12" />
+                <rect x="292" y="72" width="16" height="18" rx="3" fill={C.navy} opacity="0.12" stroke={C.navy} strokeWidth="0.4" />
                 <rect x="293" y="72" width="14" height="4" rx="1" fill={C.blue} opacity="0.08" />
                 {/* Base steps */}
                 <rect x="258" y="84" width="84" height="4" rx="1" fill={C.navy} opacity="0.06" />
@@ -314,7 +314,7 @@ const HeroVisual = () => (
                 <rect x="279" y="352" width="10" height="9" rx="2" fill={C.goldLight} opacity="0.15" stroke={C.gold} strokeWidth="0.3" />
                 <rect x="292" y="352" width="10" height="9" rx="2" fill={C.green} opacity="0.12" stroke={C.green} strokeWidth="0.3" />
                 {/* Door */}
-                <rect x="308" y="350" width="16" height="31" rx="3" fill={C.navy} opacity="0.06" stroke={C.navy} strokeWidth="0.4" opacity="0.15" />
+                <rect x="308" y="350" width="16" height="31" rx="3" fill={C.navy} opacity="0.15" stroke={C.navy} strokeWidth="0.4" />
                 <circle cx="320" cy="364" r="1.2" fill={C.goldLight} opacity="0.6" />
                 <rect x="310" y="350" width="12" height="4" rx="1" fill={C.blue} opacity="0.06" />
                 {/* Label */}
