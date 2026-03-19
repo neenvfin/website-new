@@ -20,7 +20,7 @@ const HeroVisual = () => (
     <div className={styles.heroVisual}>
         <svg
             className={styles.canvas}
-            viewBox="0 0 640 420"
+            viewBox="0 0 610 420"
             xmlns="http://www.w3.org/2000/svg"
             role="img"
             aria-label="NEENV AI-native supply chain platform"
@@ -151,7 +151,11 @@ const HeroVisual = () => (
                 <text x="126" y="318" textAnchor="middle" fill={C.gold} fontSize="7" fontWeight="700" fontFamily="inherit">&#x20B9;</text>
             </g>
 
+            {/* *illustrative purpose only */}
+            <text x="78" y="345" textAnchor="middle" fill={C.gray} fontSize="7" fontFamily="inherit" opacity="0.5">*illustrative purpose only</text>
+
             {/* ═══════════ ECOSYSTEM ILLUSTRATION ═══════════ */}
+            <g transform="translate(-30, 0)">
 
             {/* Flow lines */}
             <g className={styles.flowIn}>
@@ -408,6 +412,8 @@ const HeroVisual = () => (
             <circle cx="500" cy="8" r="2" fill={C.blue} opacity="0.1" />
             <rect x="340" y="412" width="4" height="4" rx="1" fill={C.green} opacity="0.08" transform="rotate(45 342 414)" />
             <rect x="500" y="410" width="4" height="4" rx="1" fill={C.blue} opacity="0.08" transform="rotate(45 502 412)" />
+
+            </g>{/* end illustration translate */}
         </svg>
     </div>
 );
