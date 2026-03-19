@@ -3,12 +3,40 @@
 }
 
 .card {
-    text-align: center;
-    padding: var(--space-16) var(--space-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-12) var(--space-8);
     border-radius: var(--radius-2xl);
-    background: var(--bg-navy);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+    box-shadow: 0 20px 60px rgba(26, 45, 122, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
     position: relative;
     overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.imageWrap {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    align-self: flex-end;
+    margin-bottom: calc(-1 * var(--space-12));
+}
+
+.personImg {
+    display: block;
+    width: auto;
+    height: 480px;
+    object-fit: contain;
+    object-position: bottom;
 }
 
 .card::before {
@@ -41,18 +69,13 @@
     color: var(--text-inverted);
     letter-spacing: -0.02em;
     margin-bottom: var(--space-4);
-    position: relative;
-    z-index: 1;
 }
 
 .desc {
     font-size: var(--text-base);
     line-height: var(--leading-relaxed);
     color: rgba(255, 255, 255, 0.7);
-    max-width: 440px;
-    margin: 0 auto var(--space-8);
-    position: relative;
-    z-index: 1;
+    margin-bottom: var(--space-8);
 }
 
 .cta {
@@ -67,8 +90,6 @@
     border-radius: var(--radius-lg);
     transition: all var(--duration-base) var(--ease-out);
     text-decoration: none;
-    position: relative;
-    z-index: 1;
 }
 
 .cta:hover {
@@ -90,7 +111,12 @@
     }
 
     .card {
+        flex-direction: column;
         padding: var(--space-12) var(--space-6);
         border-radius: var(--radius-xl);
+    }
+
+    .imageWrap {
+        display: none;
     }
 }

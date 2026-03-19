@@ -21,22 +21,22 @@ const howItWorks = {
     steps: [
         {
             title: 'Invoice Raised',
-            description: 'Dealer raises invoice against goods delivered or services rendered.',
+            description: 'Seller raises invoice against goods delivered or services rendered.',
             icon: <FileText size={16} strokeWidth={2} />,
         },
         {
             title: 'Invoice Verified',
-            description: 'Brand confirms the invoice on the platform.',
+            description: 'Buyer confirms the invoice on the platform.',
             icon: <ShieldCheck size={16} strokeWidth={2} />,
         },
         {
             title: 'Funds Disbursed',
-            description: 'Lender advances up to 90% of invoice value to the dealer same day.',
+            description: 'Lender advances up to 90% of invoice value to the seller.',
             icon: <Zap size={16} strokeWidth={2} />,
         },
         {
-            title: 'Brand Settles',
-            description: 'Brand pays the full invoice amount to the lender on due date.',
+            title: 'Buyer Settles',
+            description: 'Buyer pays the full invoice amount to the lender on or before due date.',
             icon: <ArrowRightLeft size={16} strokeWidth={2} />,
         },
     ],
@@ -44,19 +44,19 @@ const howItWorks = {
 
 const benefits = {
     left: {
-        title: 'Key Benefits for Brand',
+        title: 'Key Benefits for Seller',
         items: [
             {
                 headline: 'Enhances Liquidity Planning',
-                description: 'Streamline cash flow forecasting with predictable payment schedules across your dealer network.',
+                description: 'Streamline cash flow forecasting with predictable payment behaviour.',
             },
             {
                 headline: 'Off Balance Sheet Credit',
-                description: 'Financing sits with the lender, not on your books. Keep your balance sheet clean while enabling channel growth.',
+                description: 'Keep your balance sheet clean while enabling channel growth.',
             },
             {
-                headline: 'Boost Sales and Dealer Loyalty',
-                description: 'Dealers with faster access to funds place larger orders and stay committed to your brand ecosystem.',
+                headline: 'Boost Sales',
+                description: 'Additional sales growth based on strength of the seller and its ecosystem.',
             },
         ],
     },
@@ -65,15 +65,15 @@ const benefits = {
         items: [
             {
                 headline: 'Boost Business Volumes',
-                description: 'Unlock working capital from receivables to fund the next purchase cycle without waiting for payment.',
+                description: 'Additional working capital to support business growth.',
             },
             {
-                headline: 'Improved Working Capital Management',
-                description: 'Convert invoices to cash on demand. Reduce your cash conversion cycle and operate with greater agility.',
+                headline: 'Limited Documentation',
+                description: 'Eligibility based on past performance with the seller.',
             },
             {
                 headline: 'Flexibility of Repayments',
-                description: 'Repayment aligned to your actual cash flows. No rigid EMI structures — pay when the Brand settles.',
+                description: 'Repayment aligned to your actual cash flows.',
             },
         ],
     },
@@ -86,8 +86,8 @@ export default function InvoiceFactoringPage() {
             <main>
                 <ProductHero
                     title="Factoring"
-                    subtitle="Receivables to Cash. Same Day."
-                    description="Don't let unpaid invoices throttle your working capital. Upload approved sales invoices, get funded the same day. Built for distributors, dealers, and suppliers operating on credit terms within Brand ecosystems."
+                    subtitle="Receivables to Cash"
+                    description="Don't let unpaid invoices throttle your working capital. Upload approved sales invoices, get funded the same day. Built for channel partners and suppliers operating on credit terms within Brand ecosystems."
                     flowGraphic={<FactoringIllustration />}
                 />
                 <ProductDetails howItWorks={howItWorks} benefits={benefits} />

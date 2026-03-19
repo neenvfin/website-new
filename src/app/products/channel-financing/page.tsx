@@ -56,7 +56,7 @@ const benefits = {
             },
             {
                 headline: 'Flexible Repayment',
-                description: 'EMI or end-of-term, matched to your cash conversion cycle. Pay as your business collects.',
+                description: 'Pay as your business collects. Interest charged only for the period you use.',
             },
         ],
     },
@@ -65,11 +65,11 @@ const benefits = {
         items: [
             {
                 headline: 'Boost Channel Sales',
-                description: 'Credit-enabled Channel partners buy more, buy bigger, and buy often. Watch per-Channel partner revenue climb without adding a single new Channel partner.',
+                description: 'Credit-enabled Channel partners buy more, buy bigger, and buy often. Watch per-Channel partner revenue climb while they grow with you.',
             },
             {
                 headline: 'Faster Collections, Better Cash Cycle',
-                description: 'Get paid upfront by the lender on every order. Your DSO drops to zero on financed transactions.',
+                description: 'Get paid upfront by the lender on every order. Improved DSO reflects better financial discipline',
             },
             {
                 headline: 'Build Channel partner Loyalty That Sticks',

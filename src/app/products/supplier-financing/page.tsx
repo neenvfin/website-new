@@ -31,7 +31,7 @@ const howItWorks = {
         },
         {
             title: 'Supplier Gets Paid',
-            description: 'Lender pays the supplier immediately, typically at a small discount.',
+            description: 'Lender pays the supplier immediately.',
             icon: <DollarSign size={16} strokeWidth={2} />,
         },
         {
@@ -44,6 +44,23 @@ const howItWorks = {
 
 const benefits = {
     left: {
+        title: 'Key Benefits for Vendor',
+        items: [
+            {
+                headline: 'Faster Realization of Sales Proceeds',
+                description: 'Get paid when you deliver. Convert approved invoices to cash within hours.',
+            },
+            {
+                headline: 'Lower Cost of Borrowing',
+                description: 'Financing rates Branded to the buyer\u2019s credit profile, not yours. Access capital at significantly lower rates than standalone borrowing.',
+            },
+            {
+                headline: 'No Collateral Needed',
+                description: 'The approved invoice is your credential. No property papers.',
+            },
+        ],
+    },
+    right: {
         title: 'Key Benefits for Brand',
         items: [
             {
@@ -57,23 +74,6 @@ const benefits = {
             {
                 headline: 'Continued Supplies from Key Vendors',
                 description: 'Well-funded suppliers deliver on time. Eliminate production gaps caused by vendor cash flow constraints.',
-            },
-        ],
-    },
-    right: {
-        title: 'Key Benefits for Vendor',
-        items: [
-            {
-                headline: 'Faster Realization of Sales Proceeds',
-                description: 'Get paid when you deliver, not 90 days later. Convert approved invoices to cash within hours.',
-            },
-            {
-                headline: 'Lower Cost of Borrowing',
-                description: 'Financing rates Branded to the buyer\u2019s credit profile, not yours. Access capital at significantly lower rates than standalone borrowing.',
-            },
-            {
-                headline: 'No Collateral Needed',
-                description: 'The approved invoice is your credential. No property papers.',
             },
         ],
     },

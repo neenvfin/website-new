@@ -21,12 +21,12 @@ const howItWorks = {
     steps: [
         {
             title: 'Eligibility Check',
-            description: 'Dealer\u2019s Brand trade data and business profile assessed digitally.',
+            description: 'Channel partner\u2019s Brand trade data and business profile assessed digitally.',
             icon: <ClipboardCheck size={16} strokeWidth={2} />,
         },
         {
             title: 'Loan Sanctioned',
-            description: 'Approved amount disbursed directly to dealer\u2019s bank account.',
+            description: 'Approved amount disbursed directly to Brand.',
             icon: <Landmark size={16} strokeWidth={2} />,
         },
         {
@@ -48,7 +48,7 @@ const benefits = {
         items: [
             {
                 headline: 'Predictable Repayment Structure',
-                description: 'Fixed monthly EMIs with clear tenor. No floating rates, no surprises. Plan your cash flow with confidence.',
+                description: 'Fixed monthly EMIs with clear tenor. Plan your cash flow with confidence.',
             },
             {
                 headline: 'Support Tactical and Seasonal Requirements',
@@ -56,7 +56,7 @@ const benefits = {
             },
             {
                 headline: 'Better Matching of Loan Tenor with Working Capital Needs',
-                description: 'Loan duration aligned to your actual business cycle. Short-term capital for short-term needs — no long-term debt overhang.',
+                description: 'Loan duration aligned to your actual business cycle. Short-term capital for short-term needs - no long-term debt overhang.',
             },
         ],
     },
@@ -70,7 +70,7 @@ export default function WorkingCapitalLoanPage() {
                 <ProductHero
                     title="Short-Term Working Capital Loan"
                     subtitle="Flexible Business Financing"
-                    description="A flexible financing solution designed to address immediate liquidity needs across the channel ecosystem. It supports day-to-day operations, seasonal demand, and short-term growth opportunities when invoice-based financing may not be sufficient."
+                    description="A flexible financing solution designed to address immediate liquidity needs. It supports day-to-day operations, seasonal demand, and short-term growth opportunities when invoice-based financing may not be sufficient."
                     flowGraphic={<WorkingCapitalIllustration />}
                 />
                 <ProductDetails howItWorks={howItWorks} benefits={benefits} />

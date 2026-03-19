@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './CTA.module.css';
 
 const CheckIcon = () => (
@@ -34,9 +35,6 @@ const CTA = () => {
                             <Link href="/contact" className={styles.btnPrimary}>
                                 Get Started
                             </Link>
-                            {/* <Link href="/contact" className={styles.btnSecondary}>
-                                Talk to Our Team
-                            </Link> */}
                         </div>
 
                         <div className={styles.trustBadges}>
@@ -47,6 +45,17 @@ const CTA = () => {
                                 </span>
                             ))}
                         </div>
+                    </div>
+
+                    <div className={styles.ctaImage}>
+                        <Image
+                            src="/images/illustrations/confidence-person.png"
+                            alt=""
+                            width={360}
+                            height={360}
+                            sizes="(max-width: 768px) 0px, 360px"
+                            className={styles.ctaPersonImg}
+                        />
                     </div>
                 </div>
             </div>
