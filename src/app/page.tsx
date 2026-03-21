@@ -12,8 +12,15 @@ import Footer from '@/components/Footer/Footer';
 import ScrollProgress from '@/components/ScrollProgress/ScrollProgress';
 
 export const metadata: Metadata = {
-    title: 'Neenv: AI Native Supply Chain Platform',
-    description: 'Unlocking credit for India\'s brand-led dealer networks. Collateral-free channel financing, working capital loans, factoring, and supplier financing. Digital first. 72-hour disbursal.',
+    title: 'Neenv | Channel Finance Platform for India\'s MSME Dealer Networks',
+    description: 'Neenv is an NBFC-powered channel finance platform offering revolving credit, working capital loans, and supply chain financing to MSME dealer networks across India.',
+    openGraph: {
+        title: 'Neenv | Channel Finance Platform for India\'s MSME Dealer Networks',
+        description: 'Neenv is an NBFC-powered channel finance platform offering revolving credit, working capital loans, and supply chain financing to MSME dealer networks across India.',
+        url: 'https://www.neenvfin.com',
+        siteName: 'Neenv',
+        type: 'website',
+    },
     alternates: {
         canonical: 'https://www.neenvfin.com',
     },

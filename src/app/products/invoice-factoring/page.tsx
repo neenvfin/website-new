@@ -7,12 +7,14 @@ import FactoringIllustration from '@/components/ProductIllustrations/FactoringIl
 import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
-    title: 'Invoice Factoring — Convert Receivables to Working Capital',
-    description: 'Accelerate cash flow by converting trade receivables into immediate working capital. Same-day funds, no collateral, not a loan. 90% advance rate.',
+    title: 'Invoice Factoring & Discounting | Neenv',
+    description: 'Convert unpaid invoices into immediate cash flow. Neenv offers invoice factoring solutions for MSMEs and dealers in India\'s supply chain ecosystem.',
     keywords: ['invoice factoring', 'receivable financing', 'invoice discounting', 'trade receivables', 'same day funding'],
     openGraph: {
-        title: 'Invoice Factoring — Convert Receivables to Working Capital | Neenv',
-        description: 'Accelerate cash flow by converting trade receivables into immediate working capital. Same-day funds, no collateral, not a loan.',
+        title: 'Invoice Factoring & Discounting | Neenv',
+        description: 'Convert unpaid invoices into immediate cash flow. Neenv offers invoice factoring solutions for MSMEs and dealers in India\'s supply chain ecosystem.',
+        url: 'https://www.neenvfin.com/products/invoice-factoring',
+        siteName: 'Neenv',
         type: 'website',
     },
     alternates: {

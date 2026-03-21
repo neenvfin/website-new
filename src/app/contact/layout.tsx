@@ -1,8 +1,15 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact Us — Get Started with Neenv',
-    description: 'Have questions about supply chain financing? Get in touch with the Neenv team. Quick response, no commitment required.',
+    title: 'Contact Neenv | Get in Touch',
+    description: 'Reach out to the Neenv team for channel finance partnerships, dealer network financing, or general inquiries.',
+    openGraph: {
+        title: 'Contact Neenv | Get in Touch',
+        description: 'Reach out to the Neenv team for channel finance partnerships, dealer network financing, or general inquiries.',
+        url: 'https://www.neenvfin.com/contact',
+        siteName: 'Neenv',
+        type: 'website',
+    },
     alternates: {
         canonical: 'https://www.neenvfin.com/contact',
     },

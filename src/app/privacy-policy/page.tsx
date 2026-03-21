@@ -4,8 +4,15 @@ import Footer from '@/components/Footer/Footer';
 import styles from './LegalPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy',
-    description: 'Privacy Policy for Neenv Financial Technologies. Learn how we collect, use, and protect your personal information.',
+    title: 'Privacy Policy | Neenv',
+    description: 'Neenv\'s privacy policy. Learn how we collect, use, and protect your personal information.',
+    openGraph: {
+        title: 'Privacy Policy | Neenv',
+        description: 'Neenv\'s privacy policy. Learn how we collect, use, and protect your personal information.',
+        url: 'https://www.neenvfin.com/privacy-policy',
+        siteName: 'Neenv',
+        type: 'website',
+    },
     alternates: {
         canonical: 'https://www.neenvfin.com/privacy-policy',
     },

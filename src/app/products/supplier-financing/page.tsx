@@ -7,12 +7,14 @@ import SupplierFinancingIllustration from '@/components/ProductIllustrations/Sup
 import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
-    title: 'Supplier Financing — Early Vendor Payments',
-    description: 'Early payment solutions for suppliers against approved invoices. Suppliers get paid on delivery, brands keep original payment terms. Zero balance sheet impact.',
+    title: 'Supplier Financing Solutions | Neenv',
+    description: 'Strengthen your supply chain with Neenv\'s supplier financing. Help your suppliers access early payments while you extend your payment terms.',
     keywords: ['supplier financing', 'vendor financing', 'early payment', 'reverse factoring', 'supply chain finance India'],
     openGraph: {
-        title: 'Supplier Financing — Early Vendor Payments | Neenv',
-        description: 'Early payment solutions for suppliers against approved invoices. Suppliers get paid on delivery, brands keep original payment terms.',
+        title: 'Supplier Financing Solutions | Neenv',
+        description: 'Strengthen your supply chain with Neenv\'s supplier financing. Help your suppliers access early payments while you extend your payment terms.',
+        url: 'https://www.neenvfin.com/products/supplier-financing',
+        siteName: 'Neenv',
         type: 'website',
     },
     alternates: {

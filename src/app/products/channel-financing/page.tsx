@@ -7,12 +7,14 @@ import ChannelFinancingIllustration from '@/components/ProductIllustrations/Chan
 import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
-    title: 'Channel Financing — Credit Facilities for Dealer Networks',
-    description: 'Brand-led, data-powered credit facilities for your dealer network. Pre-approved limits, zero collateral, 72-hour disbursal. Powered by anchor trade data.',
+    title: 'Channel Financing for Dealer Networks | Neenv',
+    description: 'Enable your dealer network with revolving credit lines. Neenv\'s channel financing solution provides fast, flexible funding to MSMEs in your supply chain.',
     keywords: ['channel financing', 'dealer credit line', 'distributor financing', 'brand led financing', 'collateral free credit'],
     openGraph: {
-        title: 'Channel Financing — Credit Facilities for Dealer Networks | Neenv',
-        description: 'Brand-led, data-powered credit facilities for your dealer network. Pre-approved limits, zero collateral, 72-hour disbursal.',
+        title: 'Channel Financing for Dealer Networks | Neenv',
+        description: 'Enable your dealer network with revolving credit lines. Neenv\'s channel financing solution provides fast, flexible funding to MSMEs in your supply chain.',
+        url: 'https://www.neenvfin.com/products/channel-financing',
+        siteName: 'Neenv',
         type: 'website',
     },
     alternates: {

@@ -4,11 +4,11 @@ export function OrganizationSchema() {
     const schema = {
         '@context': 'https://schema.org',
         '@type': 'FinancialService',
-        name: 'Neenv: AI Native Supply Chain Platform',
-        alternateName: ['Neenv', 'Neenv Financial Technologies'],
+        name: 'Neenv',
+        alternateName: ['Neenv Financial Technologies'],
         url: baseUrl,
         logo: `${baseUrl}/images/logos/neenv-icon.svg`,
-        description: 'AI-native supply chain finance platform unlocking credit for India\'s brand-led dealer networks.',
+        description: 'NBFC-powered channel finance platform for MSME dealer networks in India.',
         foundingDate: '2025',
         founders: [
             {
@@ -50,8 +50,8 @@ export function WebSiteSchema() {
     const schema = {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'Neenv: AI Native Supply Chain Platform',
-        alternateName: ['Neenv', 'Neenv Financial Technologies'],
+        name: 'Neenv',
+        alternateName: ['Neenv Financial Technologies'],
         url: baseUrl,
     };
 

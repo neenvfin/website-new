@@ -4,8 +4,15 @@ import Footer from '@/components/Footer/Footer';
 import styles from '../privacy-policy/LegalPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'Terms & Conditions',
-    description: 'Terms and Conditions for using Neenv Financial Technologies supply chain financing platform.',
+    title: 'Terms and Conditions | Neenv',
+    description: 'Terms and conditions for using Neenv\'s channel finance platform and services.',
+    openGraph: {
+        title: 'Terms and Conditions | Neenv',
+        description: 'Terms and conditions for using Neenv\'s channel finance platform and services.',
+        url: 'https://www.neenvfin.com/terms-and-conditions',
+        siteName: 'Neenv',
+        type: 'website',
+    },
     alternates: {
         canonical: 'https://www.neenvfin.com/terms-and-conditions',
     },
