@@ -35,6 +35,33 @@ const founders = [
         ],
         linkedin: 'https://www.linkedin.com/in/abhishek-lall-706b802/',
     },
+    {
+        name: 'Vijay Dhingra',
+        role: 'Co-Founder',
+        image: '/images/founders/Vijay Photo.png',
+        imageObjectPosition: 'center center',
+        imageScale: 1,
+        summary: '24+ years of Compliance, Governance, Legal & Finance experience in BFSI space across NBFCs.',
+        highlights: [
+            'Chief Legal & Compliance Officer at Progfin',
+            'Whole-time Director at Home Credit India',
+            'LL.B and Company Secretary',
+        ],
+        linkedin: 'https://www.linkedin.com/in/vijay-dhingra-928b2423/',
+    },
+    {
+        name: 'Rahul Chaplot',
+        role: 'Chief Technology Officer',
+        image: '/images/founders/Rahul Photo.png',
+        imageObjectPosition: 'center center',
+        imageScale: 1,
+        summary: 'IIT Bombay alumnus with 8+ years of experience in Fintech Product & Technology.',
+        highlights: [
+            'Built and led B2B SaaS vertical at Progcap empowering Indian emerging brands',
+            'Shipped India\u2019s COVID ePass system at eGov Foundation under national emergency timelines',
+        ],
+        linkedin: 'https://www.linkedin.com/in/chaplotrahul/',
+    },
 ];
 
 const Founders = () => {
@@ -42,7 +69,7 @@ const Founders = () => {
         <section id="founders" className={styles.founders}>
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <span className={`${styles.badge} badge-animated`}>MEET THE FOUNDERS</span>
+                    <span className={`${styles.badge} badge-animated`}>MEET THE FOUNDING TEAM</span>
                     <h2 className={styles.title}>Built by the People Who've Done This Before!</h2>
                 </div>
 
@@ -61,6 +88,10 @@ const Founders = () => {
                                     height={220}
                                     sizes="220px"
                                     className={styles.founderImage}
+                                    style={{
+                                        objectPosition: founder.imageObjectPosition ?? 'center top',
+                                        transform: `scale(${founder.imageScale ?? 1.15})`,
+                                    }}
                                 />
                             </div>
                             <div className={styles.info}>

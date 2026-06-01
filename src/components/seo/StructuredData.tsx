@@ -21,6 +21,18 @@ export function OrganizationSchema() {
                 name: 'Abhishek Lall',
                 jobTitle: 'Co-Founder & COO',
             },
+            {
+                '@type': 'Person',
+                name: 'Vijay Dhingra',
+                jobTitle: 'Co-Founder',
+            },
+        ],
+        employee: [
+            {
+                '@type': 'Person',
+                name: 'Rahul Chaplot',
+                jobTitle: 'Chief Technology Officer',
+            },
         ],
         address: {
             '@type': 'PostalAddress',
